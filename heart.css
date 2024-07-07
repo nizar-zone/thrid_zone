@@ -1,0 +1,60 @@
+body {
+    background: rgba(255, 217, 0, 0.644);
+    margin: 0;
+    padding: 0;
+}
+
+.heart {
+    width: 180px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    background: #ff4040;
+    transform-origin: right bottom;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.heart::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: 3s;
+    transform-origin: right bottom;
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+}
+
+
+.heart:hover {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.heart:hover::before {
+    transform: rotate(450deg) translateY(100px);
+    -webkit-transform: rotate(450deg) translateY(100px);
+    -moz-transform: rotate(450deg) translateY(100px);
+    -ms-transform: rotate(450deg) translateY(100px);
+    -o-transform: rotate(450deg) translateY(100px);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: #e22c2c;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

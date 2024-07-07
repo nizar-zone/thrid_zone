@@ -1,0 +1,43 @@
+* {
+    font-family: "Zilla Slab", serif;
+}
+
+.font1 {
+    margin: 50px 0 0 530px;
+}
+
+.yes {
+    position: absolute;
+    margin: 10px 0 0 500px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+    
+.yes:hover {
+    background-color: #a04545;
+}
+
+.no-bg {
+    position: relative;
+}
+.no {
+    position: absolute;
+    margin: 10px 0 0 650px ;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+        
+.img {
+    height: 300px;
+    margin: 50px 0 0 500px;
+}
